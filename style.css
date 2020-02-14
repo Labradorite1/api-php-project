@@ -1,0 +1,471 @@
+@font-face {
+  font-family: 'Biotif-Regular';
+  src: url(Biotif-Regular.ttf);
+}
+@font-face {
+  font-family: 'Biotif-Bold';
+  src: url(Biotif-Bold.ttf);
+}
+
+h2{
+	font-family: 'Biotif-Regular';
+	text-shadow: 1px 1px #000000;
+}
+h3{
+	font-family: 'Biotif-Regular';
+	text-shadow: 1px 1px #000000;
+}
+*{
+	padding: 0;
+	margin: 0;
+	color: rgb(0,200,200);
+}
+header{
+	height: 100px;
+	background-color: rgba(0,0,0,0.4);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+header .idInput{
+	margin: 0px auto 0;
+}
+form{
+	width: 50%;
+}
+.input-container{
+	margin: 0px auto 0;
+	width: fit-content;
+}
+input{
+	background-color: rgba(0,0,0,0.4);
+	border: none;
+	height: 25px;
+}
+.submitButton{
+	font-weight: bold;
+	padding: 0px 1em;
+}
+.button-container{
+	margin: 0px auto 0;
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+	padding-top: 10px;
+}
+.one-button-container{
+	display: flex;
+	margin-right: 10px;
+	width: 25%;
+}
+.one-button-container input{
+	margin-left: 10px;
+	margin-top: -2px;
+}
+body{
+	/*background-color: #333333;*/
+	background-image: url("big-background.png");
+	background-size: 100%;
+	width: 100%;
+}
+main{
+	padding: 40px 0px;
+}
+main h2{
+	display: inline;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border: 2px solid rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.4);
+	padding: 11px;
+	border-bottom: 0px solid blue;
+}
+main h3{
+	font-size: 0.8em;
+	padding-bottom: 8px;
+	padding-top: 10px;
+}
+.loadout-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0px 5%;
+	grid-gap: 5%;
+}
+.player-container{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.playername-container{
+	margin: 7px 0px;
+	max-height: 48px;
+	grid-row-start: 1;
+}
+.playername-container img{
+	height: 1.5em;
+	border: none;
+	filter: invert(49%) sepia(99%) saturate(462%) hue-rotate(132deg) brightness(102%) contrast(102%);
+	width: 40px;
+	position: relative;
+	top: 11px;
+}
+.items-container{
+	text-align: center;
+	display: flex;
+	border: 2px solid rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.4);
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.item-container{
+	height: 140px;
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 13px;
+	position: relative;
+}
+img{
+	width: 96px;
+	border: 3px solid rgb(220,220,220);
+}
+.subclass-image-container{
+	transform: rotate(45deg);
+	border: 3px solid rgb(220,220,220);
+	/*border: 2px solid red;*/
+	height: 66px;
+	width: 66px;
+	margin: 15px;
+	z-index: 0;
+}
+.subclass-image-container img{
+	transform: rotate(-45deg);
+	border: none;
+	margin: -15px 0px 0px -15px;
+	z-index: 0;	
+}
+.player-info-container{
+	padding-left: 10px;
+	border: 2px solid rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.4);
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+footer{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+.image-placeholder{
+	height: 96px;
+	width: 96px;
+}
+.perk-container{
+	background-color: white;
+	position: absolute;
+    left: 14px;
+    top: 150px;
+    background-color: rgba(0,0,0,0.4);
+}
+.perk-container img{
+	width: 48px;
+	height: 48px;
+}
+.perk-container-00{
+	display: none;
+}
+.perk-container-01{
+	display: none;
+}
+.perk-container-02{
+	display: none;
+}
+.perk-container-03{
+	display: none;
+}
+.perk-container-04{
+	display: none;
+}
+.perk-container-05{
+	display: none;
+}
+.perk-container-06{
+	display: none;
+}
+.perk-container-07{
+	display: none;
+}
+.perk-container-10{
+	display: none;
+}
+.perk-container-11{
+	display: none;
+}
+.perk-container-12{
+	display: none;
+}
+.perk-container-13{
+	display: none;
+}
+.perk-container-14{
+	display: none;
+}
+.perk-container-15{
+	display: none;
+}
+.perk-container-16{
+	display: none;
+}
+.perk-container-17{
+	display: none;
+}
+.perk-container-20{
+	display: none;
+}
+.perk-container-21{
+	display: none;
+}
+.perk-container-22{
+	display: none;
+}
+.perk-container-23{
+	display: none;
+}
+.perk-container-24{
+	display: none;
+}
+.perk-container-25{
+	display: none;
+}
+.perk-container-26{
+	display: none;
+}
+.perk-container-27{
+	display: none;
+}
+.perk-container-30{
+	display: none;
+}
+.perk-container-31{
+	display: none;
+}
+.perk-container-32{
+	display: none;
+}
+.perk-container-33{
+	display: none;
+}
+.perk-container-34{
+	display: none;
+}
+.perk-container-35{
+	display: none;
+}
+.perk-container-36{
+	display: none;
+}
+.perk-container-37{
+	display: none;
+}
+.perk-container-40{
+	display: none;
+}
+.perk-container-41{
+	display: none;
+}
+.perk-container-42{
+	display: none;
+}
+.perk-container-43{
+	display: none;
+}
+.perk-container-44{
+	display: none;
+}
+.perk-container-45{
+	display: none;
+}
+.perk-container-46{
+	display: none;
+}
+.perk-container-47{
+	display: none;
+}
+.perk-container-50{
+	display: none;
+}
+.perk-container-51{
+	display: none;
+}
+.perk-container-52{
+	display: none;
+}
+.perk-container-53{
+	display: none;
+}
+.perk-container-54{
+	display: none;
+}
+.perk-container-55{
+	display: none;
+}
+.perk-container-56{
+	display: none;
+}
+.perk-container-57{
+	display: none;
+}
+
+.item-container-00:hover .perk-container-00{
+	display: flex;
+}
+.item-container-01:hover .perk-container-01{
+	display: flex;
+}
+.item-container-02:hover .perk-container-02{
+	display: flex;
+}
+.item-container-03:hover .perk-container-03{
+	display: flex;
+}
+.item-container-04:hover .perk-container-04{
+	display: flex;
+}
+.item-container-05:hover .perk-container-05{
+	display: flex;
+}
+.item-container-06:hover .perk-container-06{
+	display: flex;
+}
+.item-container-07:hover .perk-container-07{
+	display: flex;
+}
+.item-container-10:hover .perk-container-10{
+	display: flex;
+}
+.item-container-11:hover .perk-container-11{
+	display: flex;
+}
+.item-container-12:hover .perk-container-12{
+	display: flex;
+}
+.item-container-13:hover .perk-container-13{
+	display: flex;
+}
+.item-container-14:hover .perk-container-14{
+	display: flex;
+}
+.item-container-15:hover .perk-container-15{
+	display: flex;
+}
+.item-container-16:hover .perk-container-16{
+	display: flex;
+}
+.item-container-17:hover .perk-container-17{
+	display: flex;
+}
+.item-container-20:hover .perk-container-20{
+	display: flex;
+}
+.item-container-21:hover .perk-container-21{
+	display: flex;
+}
+.item-container-22:hover .perk-container-22{
+	display: flex;
+}
+.item-container-23:hover .perk-container-23{
+	display: flex;
+}
+.item-container-24:hover .perk-container-24{
+	display: flex;
+}
+.item-container-25:hover .perk-container-25{
+	display: flex;
+}
+.item-container-26:hover .perk-container-26{
+	display: flex;
+}
+.item-container-27:hover .perk-container-27{
+	display: flex;
+}
+.item-container-30:hover .perk-container-30{
+	display: flex;
+}
+.item-container-31:hover .perk-container-31{
+	display: flex;
+}
+.item-container-32:hover .perk-container-32{
+	display: flex;
+}
+.item-container-33:hover .perk-container-33{
+	display: flex;
+}
+.item-container-34:hover .perk-container-34{
+	display: flex;
+}
+.item-container-35:hover .perk-container-35{
+	display: flex;
+}
+.item-container-36:hover .perk-container-36{
+	display: flex;
+}
+.item-container-37:hover .perk-container-37{
+	display: flex;
+}
+.item-container-40:hover .perk-container-40{
+	display: flex;
+}
+.item-container-41:hover .perk-container-41{
+	display: flex;
+}
+.item-container-42:hover .perk-container-42{
+	display: flex;
+}
+.item-container-43:hover .perk-container-43{
+	display: flex;
+}
+.item-container-44:hover .perk-container-44{
+	display: flex;
+}
+.item-container-45:hover .perk-container-45{
+	display: flex;
+}
+.item-container-46:hover .perk-container-46{
+	display: flex;
+}
+.item-container-47:hover .perk-container-47{
+	display: flex;
+}
+.item-container-50:hover .perk-container-50{
+	display: flex;
+}
+.item-container-51:hover .perk-container-51{
+	display: flex;
+}
+.item-container-52:hover .perk-container-52{
+	display: flex;
+}
+.item-container-53:hover .perk-container-53{
+	display: flex;
+}
+.item-container-54:hover .perk-container-54{
+	display: flex;
+}
+.item-container-55:hover .perk-container-55{
+	display: flex;
+}
+.item-container-56:hover .perk-container-56{
+	display: flex;
+}
+.item-container-57:hover .perk-container-57{
+	display: flex;
+}
